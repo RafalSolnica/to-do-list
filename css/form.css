@@ -11,6 +11,12 @@
 	flex: 1 1 auto;
 }
 
+@media (max-width: 767px) {
+	.form__input {
+		flex: 1 0 100%;
+	}
+}
+
 .form__button {
 	border: none;
 	background: #007382;
