@@ -14,6 +14,13 @@
 		},
 	];
 
+	const resetTaskInput = () => {
+		const newTaskInput = document.querySelector(".js-newTask");
+
+		newTaskInput.value = "";
+		newTaskInput.focus();
+	};
+
 	const addNewTask = (newTaskContent) => {
 		tasks.push({
 			content: newTaskContent,
@@ -86,6 +93,8 @@
 		if (newTaskContent === "") return;
 
 		addNewTask(newTaskContent);
+
+		resetTaskInput();
 	};
 
 	const init = () => {
