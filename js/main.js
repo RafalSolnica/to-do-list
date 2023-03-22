@@ -1,16 +1,16 @@
 {
 	const tasks = [
 		{
-			content: "Skończyć 6 moduł",
+			content: "Skończyć 6 moduł YouCode",
+			done: true,
+		},
+		{
+			content: "Zrobić obiad",
 			done: false,
 		},
 		{
-			content: "Iść na 2-godzinny spacer",
-			done: true,
-		},
-		{
-			content: "Zjeść obiad",
-			done: true,
+			content: "Iść na spacer",
+			done: false,
 		},
 	];
 
