@@ -48,15 +48,15 @@
 	color: white;
 }
 
-.section__taskButton--completion {
+.section__taskButton--toggleCompleted {
 	background: hsl(120, 100%, 25%);
 }
 
-.section__taskButton--completion:hover {
+.section__taskButton--toggleCompleted:hover {
 	background: hsl(120, 100%, 35%);
 }
 
-.section__taskButton--completion:active {
+.section__taskButton--toggleCompleted:active {
 	background: hsl(120, 100%, 45%);
 }
 

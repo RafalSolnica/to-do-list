@@ -69,7 +69,7 @@
 				<li 
 					class="section__task ${task.completed ? "section__task--completed" : ""}"
 				>
-					<button class="section__taskButton section__taskButton--completion js-toggleCompleted">
+					<button class="section__taskButton section__taskButton--toggleCompleted js-toggleCompleted">
 						${task.completed ? "✔" : ""}
 					</button>
 					<span 
