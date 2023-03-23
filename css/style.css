@@ -29,63 +29,10 @@ button {
 	padding: 5px;
 }
 
-.subContainer {
-	margin: 10px 0;
-}
-
-.contentContainer {
-	background: #fff;
-	border: none;
-	padding: 30px;
-	margin: 2px;
-	/* display: flex; */
-	/* justify-content: space-between; */
-}
-
-@media (max-width: 767px) {
-	.contentContainer {
-		padding: 10px;
-	}
-}
-
-.list {
-	list-style: none;
-	width: 100%;
-	padding-inline-start: 0;
-}
-
-.list__item {
-	width: 100%;
-	display: flex;
-	gap: 10px;
-	align-items: center;
-	padding: 10px;
-	border-bottom: 2px solid #ededed;
-}
-
-.list__item--done {
-	text-decoration: line-through;
-}
-
-.list__content {
-	flex: 1 1 auto;
-}
-
 @media (max-width: 767px) {
 	.container {
 		width: 100%;
 	}
-
-	.contentContainer {
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: center;
-	}
-}
-
-.iconButton {
-	border: none;
-	padding: 0;
 }
 
 .checkboxImage {

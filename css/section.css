@@ -1,0 +1,43 @@
+.section {
+	background: #fff;
+	box-shadow: 1px 1px 5px #ccc;
+	margin: 10px 0;
+}
+
+.section__header {
+	border-bottom: 2px solid #ccc;
+	padding: 20px;
+}
+
+.section__content {
+	border: none;
+	padding: 20px;
+}
+
+.section__list {
+	list-style: none;
+	width: 100%;
+	padding-inline-start: 0;
+}
+
+.section__listItem {
+	width: 100%;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 2px solid #ededed;
+}
+
+.section__listItem--done {
+	text-decoration: line-through;
+}
+
+.section__listItemContent {
+	flex: 1 1 auto;
+}
+
+.section__iconButton {
+	border: none;
+	padding: 0;
+}

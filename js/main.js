@@ -64,14 +64,18 @@
 
 		for (const task of tasks) {
 			htmlString += `
-				<li class="list__item ${task.done ? "list__item--done" : ""}">
-					<button class="iconButton js-done">
+				<li 
+                    class="section__listItem ${
+						task.done ? "section__listItem--done" : ""
+					}"
+                >
+					<button class="section__iconButton js-done">
                         <img src="./images/checkbox.svg" alt="check_mark" class="checkboxImage">
                     </button>
-                    <span class="list__content">
+                    <span class="section__listItemContent">
                         ${task.content}
                     </span>
-                    <button class="iconButton js-remove">
+                    <button class="section__iconButton js-remove">
                         <img src="./images/trash-can.svg" alt="trash_can" class="trashcanImage">
                     </button>
 				</li>
