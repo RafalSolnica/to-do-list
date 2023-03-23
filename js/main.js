@@ -70,13 +70,13 @@
 					}"
                 >
 					<button class="section__iconButton js-done">
-                        <img src="./images/checkbox.svg" alt="check_mark" class="checkboxImage">
+                        <img src="./images/checkbox.svg" alt="check_mark" class="section__completionIcon">
                     </button>
                     <span class="section__listItemContent">
                         ${task.content}
                     </span>
                     <button class="section__iconButton js-remove">
-                        <img src="./images/trash-can.svg" alt="trash_can" class="trashcanImage">
+                        <img src="./images/trash-can.svg" alt="trash_can" class="section__removeIcon">
                     </button>
 				</li>
 			`;

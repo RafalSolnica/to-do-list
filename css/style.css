@@ -34,23 +34,3 @@ button {
 		width: 100%;
 	}
 }
-
-.checkboxImage {
-	filter: invert(26%) sepia(100%) saturate(1255%) hue-rotate(92deg)
-		brightness(98%) contrast(106%);
-}
-
-.checkboxImage:hover {
-	filter: invert(73%) sepia(27%) saturate(3164%) hue-rotate(68deg)
-		brightness(88%) contrast(105%);
-}
-
-.trashcanImage {
-	filter: invert(18%) sepia(93%) saturate(5820%) hue-rotate(357deg)
-		brightness(99%) contrast(116%);
-}
-
-.trashcanImage:hover {
-	filter: invert(68%) sepia(39%) saturate(4845%) hue-rotate(317deg)
-		brightness(88%) contrast(99%);
-}
