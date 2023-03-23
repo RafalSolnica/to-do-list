@@ -6,7 +6,7 @@
 		},
 		{
 			content: "Zrobić obiad",
-			completed: false,
+			completed: true,
 		},
 		{
 			content: "Iść na spacer",
