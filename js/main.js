@@ -2,15 +2,15 @@
 	const tasks = [
 		{
 			content: "Skończyć 6 moduł YouCode",
-			done: true,
+			completed: true,
 		},
 		{
 			content: "Zrobić obiad",
-			done: false,
+			completed: false,
 		},
 		{
 			content: "Iść na spacer",
-			done: false,
+			completed: false,
 		},
 	];
 
@@ -35,8 +35,8 @@
 		render();
 	};
 
-	const toggleTaskDone = (taskIndex) => {
-		tasks[taskIndex].done = !tasks[taskIndex].done;
+	const toggleTaskCompleted = (taskIndex) => {
+		tasks[taskIndex].completed = !tasks[taskIndex].completed;
 
 		render();
 	};
@@ -50,11 +50,13 @@
 			});
 		});
 
-		const toggleDoneButtons = document.querySelectorAll(".js-done");
+		const toggleCompletedButtons = document.querySelectorAll(
+			".js-toggleCompleted"
+		);
 
-		toggleDoneButtons.forEach((toggleDoneButton, index) => {
-			toggleDoneButton.addEventListener("click", () => {
-				toggleTaskDone(index);
+		toggleCompletedButtons.forEach((toggleCompletedButton, index) => {
+			toggleCompletedButton.addEventListener("click", () => {
+				toggleTaskCompleted(index);
 			});
 		});
 	};
@@ -65,19 +67,22 @@
 		for (const task of tasks) {
 			htmlString += `
 				<li 
-                    class="section__listItem ${
-						task.done ? "section__listItem--done" : ""
-					}"
-                >
-					<button class="section__iconButton js-done">
-                        <img src="./images/checkbox.svg" alt="check_mark" class="section__completionIcon">
-                    </button>
-                    <span class="section__listItemContent">
-                        ${task.content}
-                    </span>
-                    <button class="section__iconButton js-remove">
-                        <img src="./images/trash-can.svg" alt="trash_can" class="section__removeIcon">
-                    </button>
+					class="section__task ${task.completed ? "section__task--completed" : ""}"
+				>
+					<button class="section__taskButton section__taskButton--completion js-toggleCompleted">
+						${task.completed ? "✔" : ""}
+					</button>
+					<span 
+						class="section__taskContent ${
+							task.completed
+								? "section__taskContent--completed"
+								: ""
+						}">
+						${task.content}
+					</span>
+					<button class="section__taskButton section__taskButton--remove js-remove">
+						<img src="./images/trash_bin.png" alt="trash_can" class="section__removeIcon">
+					</button>
 				</li>
 			`;
 		}
