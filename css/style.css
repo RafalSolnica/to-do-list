@@ -21,16 +21,3 @@ img {
 button {
 	cursor: pointer;
 }
-
-.container {
-	max-width: 800px;
-	min-width: 300px;
-	margin: 0 auto;
-	padding: 5px;
-}
-
-@media (max-width: 767px) {
-	.container {
-		width: 100%;
-	}
-}

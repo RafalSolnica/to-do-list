@@ -7,19 +7,33 @@
 }
 
 .form__input {
+	flex-grow: 1;
 	padding: 8px;
-	flex: 1 1 auto;
 }
 
 @media (max-width: 767px) {
 	.form__input {
-		flex: 1 0 100%;
+		flex-basis: 100%;
 	}
 }
 
 .form__button {
 	border: none;
-	background: #007382;
+	background: hsl(187, 100%, 25%);
 	color: white;
 	padding: 10px;
+}
+
+.form__button:hover {
+	background: hsl(187, 100%, 30%);
+}
+
+.form__button:active {
+	background: hsl(187, 100%, 35%);
+}
+
+@media (max-width: 767px) {
+	.form__button {
+		flex-basis: 100%;
+	}
 }
