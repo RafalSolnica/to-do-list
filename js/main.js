@@ -66,22 +66,20 @@
 
 		for (const task of tasks) {
 			htmlString += `
-				<li 
-					class="section__task ${task.completed ? "section__task--completed" : ""}"
-				>
-					<button class="section__taskButton section__taskButton--toggleCompleted js-toggleCompleted">
+				<li class="tasks__item">
+					<button class="tasks__itemButton tasks__itemButton--toggleCompleted js-toggleCompleted">
 						${task.completed ? "✔" : ""}
 					</button>
 					<span 
-						class="section__taskContent ${
+						class="tasks__itemContent ${
 							task.completed
-								? "section__taskContent--completed"
+								? "tasks__itemContent--completed"
 								: ""
 						}">
 						${task.content}
 					</span>
-					<button class="section__taskButton section__taskButton--remove js-remove">
-						<img src="./images/trash_bin.png" alt="trash_can" class="section__removeIcon">
+					<button class="tasks__itemButton tasks__itemButton--remove js-remove">
+						<img src="./images/trash_bin.png" alt="trash_can" class="tasks__itemIcon--remove">
 					</button>
 				</li>
 			`;
