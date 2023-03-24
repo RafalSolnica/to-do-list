@@ -72,9 +72,7 @@
 					</button>
 					<span 
 						class="tasks__itemContent ${
-							task.completed
-								? "tasks__itemContent--completed"
-								: ""
+							task.completed ? "tasks__itemContent--completed" : ""
 						}">
 						${task.content}
 					</span>
@@ -93,9 +91,7 @@
 	const onFormSubmit = (e) => {
 		e.preventDefault();
 
-		const newTaskContent = document
-			.querySelector(".js-newTask")
-			.value.trim();
+		const newTaskContent = document.querySelector(".js-newTask").value.trim();
 
 		if (newTaskContent === "") return;
 
