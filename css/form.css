@@ -24,16 +24,16 @@
 	padding: 10px;
 }
 
+@media (max-width: 767px) {
+	.form__button {
+		flex-basis: 100%;
+	}
+}
+
 .form__button:hover {
 	background: hsl(187, 100%, 30%);
 }
 
 .form__button:active {
 	background: hsl(187, 100%, 35%);
-}
-
-@media (max-width: 767px) {
-	.form__button {
-		flex-basis: 100%;
-	}
 }
