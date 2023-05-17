@@ -21,7 +21,7 @@
   };
 
   const removeTask = (taskIndex) => {
-    tasks = [...tasks.slice(0, taskIndex), ...tasks.slice(taskIndex + 1)];
+    tasks = [...tasks.filter((task) => tasks.indexOf(task) !== taskIndex)];
 
     render();
   };
@@ -40,7 +40,7 @@
   };
 
   const markAllCompleted = () => {
-    tasks.forEach((task) => (task.completed = true));
+    tasks = tasks.map((task) => ({ ...task, completed: true }));
 
     render();
   };
@@ -127,14 +127,14 @@
       return;
     }
     buttonContainer.innerHTML = `
-    <button class="section__button js-toggleHideCompleted">
+      <button class="section__button js-toggleHideCompleted">
         ${hideCompletedTasks ? "Pokaż" : "Ukryj"} ukończone
-        </button>
-        <button class="section__button js-markAllCompleted"
-        ${
-          tasks.every(({ completed }) => completed) ? "disabled" : ""
-        }> Ukończ wszystkie 
-        </button> 
+      </button>
+      <button class="section__button js-markAllCompleted"${
+        tasks.every(({ completed }) => completed) ? "disabled" : ""
+      }>
+        Ukończ wszystkie 
+      </button> 
     `;
   };
 
