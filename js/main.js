@@ -39,7 +39,7 @@
     render();
   };
 
-  const MarkAllCompleted = () => {
+  const markAllCompleted = () => {
     tasks.forEach((task) => (task.completed = true));
 
     render();
@@ -90,7 +90,7 @@
     );
 
     if (markAllCompletedButton)
-      markAllCompletedButton.addEventListener("click", MarkAllCompleted);
+      markAllCompletedButton.addEventListener("click", markAllCompleted);
   };
 
   const renderTasks = () => {
